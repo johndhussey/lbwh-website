@@ -13,54 +13,22 @@ document.querySelector('.nav-toggle').addEventListener('click', () => {
 });
 
 
-// Contact form submission
-/* document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Perform form submission actions here (e.g., AJAX request)
-    document.getElementById('contact-notification').innerText = "Form submitted successfully!";
-    document.getElementById('contact-notification').style.display = 'block';
-    setTimeout(() => {
-        document.getElementById('contact-notification').style.display = 'none';
-    }, 3000);
-}); */
-
-// Keep-in-touch form submission
-/* document.getElementById('keep-in-touch-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const email = document.getElementById('keep-in-touch-email').value;
-
-    fetch('YOUR_WEB_APP_URL', {
-        method: 'POST',
-        body: JSON.stringify({email}),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.result === 'success') {
-            document.getElementById('keep-in-touch-notification').innerText = "Subscription successful!";
-            document.getElementById('keep-in-touch-notification').style.display = 'block';
-            setTimeout(() => {
-                document.getElementById('keep-in-touch-notification').style.display = 'none';
-            }, 3000);
-        }
-    });
-}); */
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scrolling to sections
-    document.querySelectorAll("nav ul li a").forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
+    // Smooth scroll to sections
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
-
-            document.querySelector(this.getAttribute("href")).scrollIntoView({
-                behavior: "smooth"
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
             });
+            
+            // Close the navigation panel in mobile view after selecting an item
+            if (window.innerWidth <= 768) {
+                document.querySelector('.nav-menu').classList.remove('open');
+            }
         });
     });
+
 
     // Section reveal on scroll
     const sections = document.querySelectorAll("section");
