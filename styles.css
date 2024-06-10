@@ -1,8 +1,10 @@
-/* Add your CSS styles here */
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 
 header {
@@ -10,47 +12,78 @@ header {
     height: 100vh;
     color: white;
     text-align: center;
-    position: relative;
+    position: relative;    
 }
 
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    height:40px;
+    background: rgba(27, 151, 185, 0.5);
     padding: 10px 0;
+    z-index: 1000;
 }
 
-nav ul {
+.nav-toggle {
+    display: none;
+    position: fixed;
+    top: 5px;
+    right: 20px;
+    font-size: 2em;
+    background: none;
+    border: none;
+    color: white;
+    z-index: 1001;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+.nav-menu li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(27, 151, 185, 0.5);
+        position: fixed;
+        top: 59px; /* Adjust top to be below the fixed nav */
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+}
+
 #hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px;
+    margin-top: 58px;
 }
 
 .logo {
-    max-width: 200px;
-    margin-bottom: 20px;
+    max-width: 300px; /* Updated logo size */
+    margin-bottom: -20px; /* Reduce margin to lift it higher */
+}
+
+.worklife {
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: 0px;
 }
 
 h1 {
@@ -68,15 +101,29 @@ main {
 
 section {
     margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
 }
 
-.benefit, .membership-option {
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.benefit {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.benefit img, .membership-option img {
+.benefit img {
     max-width: 50px;
     margin-right: 20px;
 }
@@ -84,6 +131,7 @@ section {
 .price {
     font-size: 1.2em;
     font-weight: bold;
+    margin-left:50px;
 }
 
 footer {
@@ -112,124 +160,6 @@ footer .social-media a {
     color: green;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    overflow-x: hidden;
-}
-
-header {
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(44, 62, 80, 0.9);
-    padding: 1em 0;
-    z-index: 1000;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-#hero {
-    background: url('path/to/hero-image.jpg') no-repeat center center/cover;
-    padding: 5em 1em;
-}
-
-#hero .logo {
-    width: 100px;
-    margin-bottom: 1em;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 0;
-    font-size: 1.2em;
-}
-
-main {
-    padding: 2em 1em;
-}
-
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#benefits {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.benefit {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1
-
-}
-
-.benefit {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1em;
-    margin: 1em;
-    text-align: center;
-    width: calc(33% - 2em);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.benefit img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 0.5em;
-}
-
-.benefit p {
-    margin: 0;
-    font-size: 1em;
-}
-
-h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
 #location, #facilities, #membership, #contact {
     background: white;
     border: 1px solid #ddd;
@@ -249,14 +179,22 @@ ul li {
     font-size: 1.1em;
 }
 
-#membership .membership-plan {
+.membership-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1em;
-    margin: 1em 0;
-    text-align: center;
-    background: #f7f7f7;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#membership .membership-plan {
+    padding: 1em;
+    margin: 1em 0;
+    background: #f7f7f7;
 }
 
 #membership .membership-plan h3 {
@@ -270,9 +208,8 @@ ul li {
 }
 
 #membership .price {
-    font-size: 1.5em;
-    color: #e74c3c;
-    font-weight: bold;
+    font-size: 1.2em;
+    color: #999999;
 }
 
 #contact {

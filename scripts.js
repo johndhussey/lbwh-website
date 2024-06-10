@@ -8,8 +8,13 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
     });
 });
 
+document.querySelector('.nav-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-menu').classList.toggle('open');
+});
+
+
 // Contact form submission
-document.getElementById('contact-form').addEventListener('submit', function(e) {
+/* document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
     // Perform form submission actions here (e.g., AJAX request)
     document.getElementById('contact-notification').innerText = "Form submitted successfully!";
@@ -17,10 +22,10 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     setTimeout(() => {
         document.getElementById('contact-notification').style.display = 'none';
     }, 3000);
-});
+}); */
 
 // Keep-in-touch form submission
-document.getElementById('keep-in-touch-form').addEventListener('submit', function(e) {
+/* document.getElementById('keep-in-touch-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const email = document.getElementById('keep-in-touch-email').value;
 
@@ -41,7 +46,7 @@ document.getElementById('keep-in-touch-form').addEventListener('submit', functio
             }, 3000);
         }
     });
-});
+}); */
 
 
 
@@ -88,5 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
         form.reset();
     });
 });
+
+
+
 
   
