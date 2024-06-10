@@ -71,12 +71,10 @@ nav {
     }
 }
 
-#hero {
-    margin-top: 58px;
-}
 
-.logo {
+.logo {    
     max-width: 300px; /* Updated logo size */
+    padding-top: 30px;
     margin-bottom: -20px; /* Reduce margin to lift it higher */
 }
 
@@ -84,6 +82,7 @@ nav {
     font-size: 1.5em;
     margin: 0;
     padding-top: 0px;
+    text-shadow: -0.5px 0 #999999, 0 0.5px #999999, 0.5px 0 #999999, 0 -0.5px #999999;
 }
 
 h1 {
