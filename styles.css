@@ -12,7 +12,14 @@ header {
     height: 100vh;
     color: white;
     text-align: center;
-    position: relative;    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+#hero {
+    width: 100%;
 }
 
 nav {
@@ -73,25 +80,32 @@ nav {
 
 
 .logo {    
-    max-width: 300px; /* Updated logo size */
-    padding-top: 30px;
-    margin-bottom: -20px; /* Reduce margin to lift it higher */
+    max-width: 150px; /* Updated logo size */    
+    margin-bottom: 20px; /* Reduce margin to lift it higher */
 }
 
 .worklife {
-    font-size: 1.5em;
-    margin: 0;
-    padding-top: 0px;
+    font-size: 1.5em;    
+    margin: 0;    
+    padding-top: 10px;
     text-shadow: -0.5px 0 #999999, 0 0.5px #999999, 0.5px 0 #999999, 0 -0.5px #999999;
+    color:#ffffff;
 }
 
 h1 {
     font-size: 3em;
     margin: 0;
+    text-shadow: -0.5px 0 #999999, 0 0.5px #999999, 0.5px 0 #999999, 0 -0.5px #999999;
+    color:#ffffff;
+}
+
+h2 {
+    margin:0px;
+    padding-bottom: 15px;
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 main {
@@ -122,13 +136,36 @@ section.visible {
     text-align: center;
 }
 
+.benefit .icon {
+    font-size: 2em;
+    padding-right: 10px;
+}
+
+.benefit p {
+    text-align: left;
+    margin: 0;
+}
+
 .benefit img {
     max-width: 50px;
     margin-right: 20px;
 }
 
+@media (min-width: 1024px) {
+    .benefits-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .benefit {
+        width: calc(33.333% - 20px);
+        box-sizing: border-box;
+    }
+}
+
 .price {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     margin-left:50px;
 }
@@ -164,18 +201,50 @@ footer .social-media a {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 2em;
-    margin: 1em;
+    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+ul.facilities-list {
     list-style: none;
     padding: 0;
 }
 
-ul li {
+ul.facilities-list li {
     margin: 0.5em 0;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    padding-left: 40px; /* Double increase padding to create more space between icon and text */
+    position: relative;
+    line-height: 1.5; /* Adjust line-height if necessary */
+}
+
+ul.facilities-list li::before {
+    content: '➤';
+    color: #3498db;
+    font-size: 1.3em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically align icon with the text */
+    margin-right: 10px; /* Add margin to the right of the icon */
+}
+
+#membership .membership-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#membership .membership-option {
+    width: calc(48% - 20px); /* Two options per row */
+    margin-bottom: 20px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    #membership .membership-option {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
 
 .membership-option {
@@ -188,22 +257,6 @@ ul li {
     padding: 1em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-#membership .membership-plan {
-    padding: 1em;
-    margin: 1em 0;
-    background: #f7f7f7;
-}
-
-#membership .membership-plan h3 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-#membership .membership-plan p {
-    margin: 0.5em 0;
-    font-size: 1.2em;
 }
 
 #membership .price {
