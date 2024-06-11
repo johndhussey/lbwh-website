@@ -1,12 +1,3 @@
-// Smooth scroll to sections
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
 
 document.querySelector('.nav-toggle').addEventListener('click', () => {
     document.querySelector('.nav-menu').classList.toggle('open');
@@ -14,17 +5,21 @@ document.querySelector('.nav-toggle').addEventListener('click', () => {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Smooth scroll to sections
     document.querySelectorAll('nav ul li a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-            
-            // Close the navigation panel in mobile view after selecting an item
-            if (window.innerWidth <= 768) {
-                document.querySelector('.nav-menu').classList.remove('open');
+        anchor.addEventListener('click', function (e) {
+            if (!window.location.pathname.includes('booking.html')) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Close the navigation panel in mobile view after selecting an item
+                if (window.innerWidth <= 768) {
+                    document.querySelector('.nav-menu').classList.remove('open');
+                }
+            } else {
+                // Navigate to the actual href if the page is booking.html
+                window.location.href = this.getAttribute('href');                
             }
         });
     });
@@ -50,19 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 
-    // Contact form submission
-    const form = document.getElementById("contact-form");
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        document.getElementById("form-submitted").classList.remove("hidden");
-        setTimeout(() => {
-            document.getElementById("form-submitted").classList.add("hidden");
-        }, 3000);
-        form.reset();
-    });
+
 });
 
 
 
 
-  
