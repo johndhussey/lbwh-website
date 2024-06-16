@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
+                
                 });
 
                 // Close the navigation panel in mobile view after selecting an item

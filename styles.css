@@ -129,6 +129,7 @@ section {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease;
+    scroll-margin: 50px;
 }
 
 section.visible {
@@ -213,7 +214,7 @@ footer .social-media a {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 2em;    
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    
 }
 
 ul.facilities-list {
@@ -275,10 +276,7 @@ ul.facilities-list li::before {
     color: #999999;
 }
 
-#contact {
-    text-align: center;
-    padding: 2em 0;
-}
+
 
 #contact form {
     display: inline-block;
