@@ -208,12 +208,11 @@ footer .social-media a {
     color: green;
 }
 
-#location, #facilities, #membership, #contact {
+#location, #facilities, #membership, #contact, #gallery {
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 2em;
-    
+    padding: 2em;    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -372,3 +371,57 @@ footer p {
     display: block;
     margin-top: 20px;
 }
+
+
+
+
+  
+  .gallery-container {
+    position: relative;
+  }
+  
+  .gallery-slide {
+    position: relative;
+    width: 100%;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    display: none;
+  }
+  
+  .gallery-image.active {
+    display: block;
+    animation: fadein 1s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .dots-container {
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease, transform 0.3s;
+  }
+  
+  .dot:hover {
+    background-color: #717171;
+    transform: scale(1.2);
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
