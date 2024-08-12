@@ -225,10 +225,19 @@ footer .social-media a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    
 }
 
-ul.facilities-list {
-    list-style: none;
+.facilities-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style-type: none;
     padding: 0;
-}
+  }
+
+  @media (max-width: 768px) {
+    .facilities-list {
+      grid-template-columns: 1fr;
+    }
+  }
 
 ul.facilities-list li {
     margin: 0.5em 0;
