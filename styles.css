@@ -209,11 +209,19 @@ footer .social-media a {
     color: green;
 }
 
-#location, #facilities, #membership, #contact, #gallery {
+#location, #facilities, #membership, #contact {
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 2em;    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    
+}
+
+#gallery {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    
 }
 
