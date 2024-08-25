@@ -177,6 +177,47 @@ section.visible {
     }
 }
 
+
+.savemoney {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.savemoney .icon {
+    font-size: 2em;
+    padding-right: 10px;
+}
+
+.savemoney p {
+    text-align: left;
+    margin: 0;
+}
+
+.savemoney img {
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+@media (min-width: 1024px) {
+    .savemoney-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .savemoney {
+        width: calc(33.333% - 20px);
+        box-sizing: border-box;
+    }
+}
+
 .price {
     font-size: 1.3em;
     font-weight: bold;
