@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyall Bay WorkHub</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="images/site_assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/site_assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/site_assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="images/site_assets/site.webmanifest">
+    <link rel="mask-icon" href="images/site_assets/icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Google tag (gtag.js) -->
@@ -23,321 +23,1240 @@
 
         gtag('config', 'G-PE1PTD34XH');
     </script>
+
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/site_assets/logo.png">
+    <!-- CSS Files comes here -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/rapid-icons.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <link href="css/nivo-lightbox.css" rel="stylesheet" media="screen">
+    <link href="css/nivo_lightbox_themes/default/default.css" rel="stylesheet" media="screen">
+    <link href="css/colors/blue.css" rel="stylesheet" media="screen">
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
+    
+    <!-- Google fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css">
+    
+    <!-- Modernizer and IE specyfic files -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/masonry.js"></script>
+    <script src="js/imagesLoaded.js"></script>
+    <!-- <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script> -->
+    
+
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        
+        .d-flex {
+            display: flex;
+        }
+
+        /* $spacer: 1rem;
+        $spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+        ); */
+
+        .mt-1 {
+            margin-top: 0.25rem;
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem;
+        }
+
+        .mt-3 {
+            margin-top: 1rem;
+        }
+
+        .mt-4 {
+            margin-top: 1.5rem;
+        }
+
+        .mt-5 {
+            margin-top: 3rem;
+        }
+
+        .portfolio_container {
+            margin: auto;
+        }
+
+        .portfolio_item {
+            width: 32%;
+            /* Adjusts item width */
+            margin-bottom: 15px;
+        }
+
+        .portfolio_item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .theme-font {
+            font-family: 'Lane', sans-serif;
+            font-weight: normal;
+        }
+
+        .font-1-2 {
+            font-size: 1.2rem;
+            line-height: 1.25rem;
+        }
+
+
+        #top-logo-image{
+            width: 150px;
+        }
+
+        /* Mobile (≤ 576px) */
+        @media (max-width: 768px) {
+            #top-logo-image{
+                width: 100px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                margin-top: 160px !important;
+            }
+
+            body {
+                overflow-x: hidden;
+            }
+
+            #about_us_img {
+                width: 95%;
+            }
+
+            #about_the_hub {
+                padding: 20px 30px 0px 30px;
+            }
+
+            .font-1-2 {
+                font-size: 1.6rem;
+            }
+
+            #about_the_hub_img {
+                padding: 0px;
+            }
+
+            .portfolio_item {
+                width: 48%;
+            }
+
+            /* #surfcam-iframe {
+                height: 40vh !important;
+                margin-left: 0px !important;
+            } */
+
+            .services_details {
+                justify-content: center;
+            }
+
+            #services_column_left {
+                margin-bottom: 1px !important;
+            }
+
+            .services_icon {
+                margin-right: 9px !important;
+            }
+        }
+
+        /* Mobile (≤ 576px) */
+        @media (max-width: 576px) {
+            .portfolio_item {
+                width: 100%;
+            }
+        }
+
+
+        /* custom styles for surfacem iframe - :start */
+        /* @media (max-width: 1500px) {
+            #surfcam-iframe {
+                height: 250vh !important;
+            }
+        } */
+        @media (max-width: 2000px) {
+            #surfcam-iframe {
+                height: 160vh !important;
+            }
+        }
+
+        @media (max-width: 1900px) {
+            #surfcam-iframe {
+                height: 160vh !important;
+            }
+        }
+
+        @media (max-width: 1800px) {
+            #surfcam-iframe {
+                height: 125vh !important;
+            }
+        }
+
+        @media (max-width: 1700px) {
+            #surfcam-iframe {
+                height: 120vh !important;
+            }
+        }
+
+        @media (max-width: 1600px) {
+            #surfcam-iframe {
+                height: 115vh !important;
+            }
+        }
+
+        @media (max-width: 1500px) {
+            #surfcam-iframe {
+                height: 110vh !important;
+            }
+        }
+
+        @media (max-width: 1450px) {
+            #surfcam-iframe {
+                height: 100vh !important;
+            }
+        }
+
+        @media (max-width: 1400px) {
+            #surfcam-iframe {
+                height: 95vh !important;
+            }
+        }
+
+        @media (max-width: 1300px) {
+            #surfcam-iframe {
+                height: 90vh !important;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            #surfcam-iframe {
+                height: 85vh !important;
+            }
+        }
+
+        @media (max-width: 1100px) {
+            #surfcam-iframe {
+                height: 76vh !important;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #surfcam-iframe {
+                height: 68vh !important;
+            }
+        }
+
+        @media (max-width: 900px) {
+            #surfcam-iframe {
+                height: 60vh !important;
+            }
+        }
+
+        @media (max-width: 800px) {
+            #surfcam-iframe {
+                height: 55vh !important;
+            }
+        }
+
+        @media (max-width: 700px) {
+            #surfcam-iframe {
+                height: 50vh !important;
+            }
+        }
+
+        @media (max-width: 600px) {
+            #surfcam-iframe {
+                height: 45vh !important;
+            }
+        }
+
+        @media (max-width: 500px) {
+            #surfcam-iframe {
+                height: 40vh !important;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #surfcam-iframe {
+                height: 30vh !important;
+            }
+        }
+        /* custom styles for surfacem iframe - :end */
+
+
+
+        .card_box{
+            background-color: #f7f8fa;
+            padding-left: 2.1rem;
+            padding-right: 2.1rem;
+            padding-top: 1.35rem;
+            padding-bottom: 2.75rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            -webkit-border-radius: 0.3rem;
+            -moz-border-radius: 0.3rem;
+            border-radius: 0.3rem;
+            box-shadow: #f1f1f1 10px 10px 10px;
+        }
+
+        /* Style the modal */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1000;
+            /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgba(0, 0, 0, 0);
+            /* Start with transparent background */
+            transition: background-color 0.3s ease;
+            /* Smooth transition for background */
+        }
+
+        /* When the modal is open, change the background color */
+        .modal.open {
+            display: block;
+            /* Show the modal */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black with opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            margin-top: 150px;
+            max-width: 80%;
+            max-height: 80%;
+            opacity: 0;
+            /* Start with transparent image */
+            transform: scale(0.8);
+            /* Start slightly smaller */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            /* Smooth transition for image */
+        }
+
+        /* When the modal is open, show the image with a smooth transition */
+        .modal.open .modal-content {
+            opacity: 1;
+            /* Fully visible */
+            transform: scale(1);
+            /* Normal size */
+        }
+
+        /* Close Button */
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            /* Smooth transition for close button */
+            opacity: 0;
+            /* Start with transparent close button */
+        }
+
+        /* When the modal is open, show the close button with a smooth transition */
+        .modal.open .close {
+            opacity: 1;
+            /* Fully visible */
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!--[if IE 9]>
+     <link href="css/ie.css" rel="stylesheet" media="screen">
+    <![endif]-->
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <button class="nav-toggle" aria-label="Open navigation menu">
-                &#9776;
-            </button>
-            <ul class="nav-menu">
-                <!--=<li><a href="#hero">Home</a></li>-->
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#membership">Prices</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#surfcam">Lyall Bay Surfcam</a></li>
-            </ul>
-        </nav>
-        <div id="hero">
-            <img src="logo.png" alt="Lyall Bay WorkHub Logo" class="logo">
-            <h1>Lyall Bay WorkHub</h1>
-            <p class="worklife">Perfecting Work-Life Balance</p>
+
+    <!--###############################-->
+    <!--PRELOADER #####################-->
+    <!--###############################-->
+
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
         </div>
-    </header>
-    <main>
-        <section id="benefits">            
+    </div>
 
-            <div class="benefits-container">
+    <!--###############################-->
+    <!--Mobile Navigation #############-->
+    <!--###############################-->
 
-                <div class="benefit">
-                    <span class="icon">🌅</span>
-                    <p>Inspiring Location</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🅿️</span>
-                    <p>Lots of Free Parking</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">☕️</span>
-                    <p>Proximity to Bakeries, Cafes and Amazing Food Options</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">✈️</span>
-                    <p>Next to the Airport</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🍻</span>
-                    <p>Upstairs from Parrotdog Brewery and Eatery</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🛒</span>
-                    <p>Convenient Shopping in Every Direction</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🐕</span>
-                    <p>Dog-Friendly Environment</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🚶‍♂️</span>
-                    <p>Beach Walks and Runs</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🏄‍♂️</span>
-                    <p>Surfing and Board Rental</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🚗</span>
-                    <p>Convenient Travel</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🏋️‍♂️</span>
-                    <p>Swim, Gym, Fitness, Health and Beauty Options Close-by</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🤝</span>
-                    <p>Great Networking</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">⚖️</span>
-                    <p>Work-Life Balance</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">🪑</span>
-                    <p>Serviced Shared Office Space</p>
-                </div>
-                <div class="benefit">
-                    <span class="icon">📍</span>
-                    <p>Your Business Address</p>
-                </div>
-            </div>
+    <div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+        <h3>MENU</h3>
+        <div id="hideRight" data-icon="&#xe0d6;"></div>
+        <nav id="mobile_menu_content">
+            <a href="#benefits" id="desktop_home">Benefits</a>
+            <a href="#team" id="desktop_about">About</a>
+            <a href="#services">Facilities</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <a href="#surfcam">Lyall Bay Surfcam</a>
+        </nav>
+    </div>
 
-        </section>
+    <!--###############################-->
+    <!--TOP MENU ######################-->
+    <!--###############################-->
 
-        <hr/>
-        <br/>
-
-        <section id="savemoney">
-            <h2>Save money, hassle and valuable time</h2>
-            <br/>
-
-            <div class="savemoney-container">
-
-                <div class="savemoney">                    
-                    <p>Fixed costs - you can budget</p>
-                </div>
-                <div class="savemoney">                    
-                    <p>No more CBD parking fees</p>
-                </div>
-                <div class="savemoney">                    
-                    <p>No more paying for $5-6 coffees</p>
-                </div>
-                <div class="savemoney">                    
-                    <p>No more Evans Bay, the Basin or Mt Vic Tunnel traffic</p>
-                </div>
-                <div class="savemoney">                    
-                    <p>Waiting for public transport - GONE!</p>
-                </div>
-                <div class="savemoney">                    
-                    <p>Save time fitting in fitness - walk 30 seconds to the Gym or the beach</p>
-                </div>
-                <div class="savemoney">
-                    <p>Home office consumables and buying them - GONE!</p>
-                </div>
-                <div class="savemoney">
-                    <p>Managing multiple home office expenses and invoices - GONE!</p>
-                </div>
-                <div class="savemoney">
-                    <p>Shopping done with ease without driving all over town: Warehouse, Bunnings, Briscoes, Rebel Sport, Noel Leeming, Repco, Backdoor, Uncle Bills, Pet Store, Bed Bath and Beyond plus lots more right next door</p>
-                </div>
-            </div>
-
-        </section>
-
-
-        <hr/>
-        <br/>
-        <section id="about">
-            <h2>About the Hub</h2>
-            <p>
-                Get ready to elevate your work-life balance at Lyall Bay WorkHub!
-            </p>
-            <p>
-                Imagine setting up your office on a sun-kissed surf beach, just steps away from amazing cafes, mouthwatering eateries, and the legendary Parrotdog brewery right downstairs.
-            </p>
-            <p>
-                Need a break? Enjoy a refreshing walk or jog along the beach—bring the dog along too! And when it's time to unwind or recharge, you've got Louka Gym, City Fitness, yoga studios, beauty treatments, art galleries and hair salons literally next door—no car needed.
-            </p>  
-            <p>  
-                Whether it's a quick haircut, a power workout, or a zen moment, it's all within reach. 
-             </p>
-            <p>
-                But it’s not just about the perks—this is where serious productivity happens. With hyper-fast internet and inspiring surroundings, you’ll get your best work done here. Plus, you'll connect with amazing and interesting people that can only come from a community like this. 
-            </p>
-            <p>    
-                Lyall Bay WorkHub is where productivity meets paradise — work hard, surf, sip, stroll, and recharge your way to the ultimate lifestyle.
-            </p>
-            <br/>
-            <center><img src="Map.png" alt="Map of Lyall Bay WorkHub Location" class="responsive-image"></center>
-            <br/>
-            <hr/>
-            <br/>
-        </section>
-        <section id="facilities">
-            <h2>Facilities</h2>
-            <ul class="facilities-list">
-                <li>Unlimited Barista Coffee</li>
-                <li>Unlimited Printing (A4 and A3)</li>
-                <li>Hyper-fast Fibre Internet (2000 Mbps)</li>                
-                <li>4 Person Meeting Room</li>
-                <li>Giant Whiteboards</li>
-                <li>Filtered Water</li>                
-                <li>Video Conferencing Equipment</li>
-                <li>2 x Soundproof booths for private calls</li>                
-                <li>External Monitors</li>
-                <li>Adjustable Stand/Sit Desks</li>
-                <li>Large kitchen</li>
-                <li>Daily Newspaper</li>                 
-                <li>24/7 Access</li>
-                <li>Shower</li>
-                <li>CCTV</li>
-                <li>Storage</li>
-                <li>Spare iMacs (27inch) for use</li>                               
-            </ul>
-        </section>
-
-
-
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="gallery-container">
-                <center>
-                    <div class="gallery-slide">                    
-                        <img src="gallery/1.jpg" class="gallery-image">
-                        <img src="gallery/2.jpg" class="gallery-image">
-                        <img src="gallery/3.jpg" class="gallery-image">
-                        <img src="gallery/4.jpg" class="gallery-image">
-                        <img src="gallery/5.jpg" class="gallery-image">
-                        <img src="gallery/6.jpg" class="gallery-image">
-                        <img src="gallery/7.jpg" class="gallery-image">
-                        <img src="gallery/8.jpg" class="gallery-image">
-                        <img src="gallery/9.jpg" class="gallery-image">
-                        <img src="gallery/10.jpg" class="gallery-image">
-                        <img src="gallery/11.jpg" class="gallery-image">
+    <section id="nav_bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div id="logo" class="logo"><a href="#home"><img src="images/site_assets/logo.png" alt="logo"></a>
                     </div>
-                </center>
-                <div class="dots-container">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
-                    <span class="dot" onclick="currentSlide(9)"></span>
-                    <span class="dot" onclick="currentSlide(10)"></span>
-                    <span class="dot" onclick="currentSlide(11)"></span>
+                    <nav id="navigation">
+                        <ul>
+                            <li class="visible-lg visible-md active"><a href="#benefits" id="desktop_home">Benefits</a>
+                            </li>
+                            <li class="visible-lg visible-md"><a href="#team" id="desktop_about">About</a></li>
+                            <li class="visible-lg visible-md"><a href="#services">Facilities</a></li>
+                            <li class="visible-lg visible-md"><a href="#gallery">Gallery</a></li>
+                            <li class="visible-lg visible-md"><a href="#pricing">Pricing</a></li>
+                            <li class="visible-lg visible-md"><a href="#contact">Contact</a></li>
+                            <li class="visible-lg visible-md"><a href="#surfcam">Lyall Bay Surfcam</a></li>
+                            <li class="hidden-lg hidden-md">
+                                <div id="showRight">
+                                    <div data-icon="&#xe0d8;" class="mobile_nav_icon_open"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        
+    <!--###############################-->
+    <!--HOME ##########################-->
+    <!--###############################-->
 
-
-        <section id="membership">
-            <h2>Membership Options (we offer a free one day trial)</h2>
-            <p>Join Lyall Bay WorkHub and experience a workspace where collaboration, innovation,
-                and community thrive, all while enjoying the incredible benefits of a beachside location,
-                outstanding amenities, and a balanced work-life integration.
-            </p>
-            <br>
-            <div class="membership-container">
-                <div class="membership-option">
-                    <h3>Dedicated desk</h3>
-                    <p class="price">
-                        $550 per month (plus GST)
-                        <br/>
-                        <span style="font-size:12px;">* Use our address for your company address</span>
-                    </p>
-                </div>
-                <div class="membership-option">
-                    <h3>Hot desk (unlimited)</h3>
-                    <p class="price">$350 per month (plus GST)</p>
-                </div>
-                <div class="membership-option">
-                    <h3>Hot desk (low user)</h3>
-                    <p class="price">
-                        $175 per month (plus GST)<br>
-                        <span style="font-size:12px;">* 1 day a week</span>
-                    </p>
-                </div>
-                <div class="membership-option">
-                    <h3>Day desk</h3>
-                    <p class="price">$50 per day (plus GST)</p>
-                </div>
-                <div class="membership-option">
-                    <h3>Team Desks</h3>
-                    <p class="price">Contact us to discuss</p>
+    <section id="home" class="home_image">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="slogan_h1">
+                    <img src="images/site_assets/logo.png" id="top-logo-image">
+                    <h2 style="margin-top: 1rem;">Lyall Bay WorkHub</h2>
                 </div>
             </div>
-        </section>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1"
+                    id="slogan_h3">
+                    <h3>Perfecting Work-Life Balance.</h3>
+                    <div data-icon="&#xe498;" id="home_arrow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--###############################-->
+    <!--ABOUT #########################-->
+    <!--###############################-->
+
+    <section id="about">
+        <div class="container">
+            <div class="row" id="benefits">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 intro">
+                    <h2>The Ultimate WorkHub Experience</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon1">
+                    <img src="images/icons/location.png" width="40px" alt="">
+                    <h4 class="theme-font mt-4 font-1-2">Inspiring Location</h4>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon2">
+                    <img src="images/icons/parked-car.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Lots of Free Parking</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon3">
+                    <img src="images/icons/airport.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Next to the Airport</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon4">
+                    <img src="images/icons/networking.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Great Networking</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon5">
+                    <img src="images/icons/car.png" width="40px" alt="">
+                    <h4 class="theme-font mt-4 font-1-2">Convenient Travel</h4>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon6">
+                    <img src="images/icons/balance.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Work-Life Balance</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon7">
+                    <img src="images/icons/business-address.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Your Business Address</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon8">
+                    <img src="images/icons/surfing.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Surfing and Board Rental</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon9">
+                    <img src="images/icons/bakery-shop.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Proximity to Bakeries, Cafes</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon11">
+                    <img src="images/icons/pet-care.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Dog-Friendly Environment</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon12">
+                    <img src="images/icons/vacations.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Beach Walks and Runs</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon14">
+                    <img src="images/icons/workplace.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Serviced Shared Office Space</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon13">
+                    <img src="images/icons/dumbbell.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Swim, Gym, Fitness, Health and Beauty Options Close-by</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon10">
+                    <img src="images/icons/beer.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Upstairs from Parrotdog Brewery and Eatery</h3>
+                </div>
+                <div class="col-sm-2 col-md-2 col-lg-2 about_icons" id="about_icon15">
+                    <img src="images/icons/convenience-store.png" width="40px" alt="">
+                    <h3 class="theme-font mt-4 font-1-2">Convenient Shopping in Every Direction</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>                
-                <br /><br />
+
+
+
+
+    <!--###############################-->
+    <!--Parallax Section ##############-->
+    <!--###############################-->
+
+    <section id="parallax_divider" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 style="color: white;">Save money, hassle and valuable time</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="save_money">
+        <div class="container">
+            <div class="row mt-5" id="masonry-grid">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>Save time fitting in fitness - walk 30 seconds to the Gym or the beach</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>No more paying for $5-6 coffees</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>No more Evans Bay, the Basin or Mt Vic Tunnel traffic</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>Shopping done with ease without driving all over town: Warehouse, Bunnings, Briscoes, Rebel Sport, Noel Leeming, Repco, Backdoor, Uncle Bills, Pet Store, Bed Bath and Beyond plus lots more right next door</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>Waiting for public transport - GONE!</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>Fixed costs - you can budget</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>Home office consumables and buying them - GONE!</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>No more CBD parking fees</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" id="">
+                    <div class="card_box">
+                        <h5>Managing multiple home office expenses and invoices - GONE!</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--###############################-->
+    <!--TEAM ##########################-->
+    <!--###############################-->
+
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="team_intro">
+                    <h2>About the Hub</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="about_the_hub_img team_slider">
+                <img src="images/site_assets/Map.png" id="about_us_img" width="100%">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="about_the_hub">
+                <!-- <h2>About the Hub</h2> -->
+                <p>
+                    Get ready to elevate your work-life balance at Lyall Bay WorkHub!
+                    <br><br>
+                    Imagine setting up your office on a sun-kissed surf beach, just steps away from amazing cafes,
+                    mouthwatering eateries, and the legendary Parrotdog brewery right downstairs.
+                    <br>
+                    Need a break? Enjoy a refreshing walk or jog along the beach—bring the dog along too! And when it's
+                    time to unwind or recharge, you've got Louka Gym, City Fitness, yoga studios, beauty treatments, art
+                    galleries and hair salons literally next door—no car needed.
+                    <br><br>
+                    Whether it's a quick haircut, a power workout, or a zen moment, it's all within reach.
+                    <br><br>
+                    But it’s not just about the perks—this is where serious productivity happens. With hyper-fast
+                    internet and inspiring surroundings, you’ll get your best work done here. Plus, you'll connect with
+                    amazing and interesting people that can only come from a community like this.
+                    <br><br>
+                    Lyall Bay WorkHub is where productivity meets paradise — work hard, surf, sip, stroll, and recharge
+                    your way to the ultimate lifestyle.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Custom Modal to view images -->
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>    
+
+
+
+    <!--###############################-->
+    <!--SERVICES ######################-->
+    <!--###############################-->
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="services_intro">
+                    <h2>Facilities</h2>
+                </div>
+            </div>
+
+            <div class="row" id="service1">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="services_column_left">
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Unlimited Barista Coffee</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Hyper-fast Fibre Internet (2000 Mbps)</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Giant Whiteboards</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Video Conferencing Equipment</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>External Monitors</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Large kitchen</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>24/7 Access</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>CCTV</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Spare iMacs (27inch) for use</h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="services_column_right">
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Unlimited Printing (A4 and A3)</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>4 Person Meeting Room</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Filtered Water</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>2 x Soundproof booths for private calls</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Adjustable Stand/Sit Desks</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Daily Newspaper</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Shower</h5>
+                    </div>
+                    <div class="services_details d-flex">
+                        <div data-icon="&#xe0be;" class="services_icon"></div>
+                        <h5>Storage</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="service2">
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!--###############################-->
+    <!--PORTFOLIO #####################-->
+    <!--###############################-->
+
+
+    <section id="gallery_heading" style="margin-top: 5rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="gallery_intro" style="text-align: center;">
+                    <h2>Gallery</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="gallery" style="margin-top: 3rem;">
+        <div class="container">
+            <div class="portfolio_container row g-3">
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/1.jpg"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/2.jpg"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/3.jpg"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/4.jpg"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/11.jpg"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/12.jpg"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/7.jpg"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/8.jpg"></a>
+                </div>
+                <!-- <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/12.jpg"></a>
+                </div> -->
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/9.jpg"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/10.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--###############################-->
+    <!--PRICING #######################-->
+    <!--###############################-->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="pricing_intro">
+                    <h2>Membership Options (we offer a free one day trial)</h2>
+                    <p>Join Lyall Bay WorkHub and experience a workspace where collaboration, innovation, and community
+                        thrive, all while enjoying the incredible benefits of a beachside location, outstanding
+                        amenities, and a balanced work-life integration.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 mt-5" id="pricing_box1">
+                    <div class="pricing_box_header">
+                        <h5>Dedicated desk</h5>
+                        <h1>$550</h1>
+                    </div>
+                    <div class="pricing_box_item">
+                        <p>Per Month (plus GST)</p>
+                    </div>
+                    <div class="pricing_box_item">
+                        <p style="padding: 4px;font-size: 0.7rem;">Use our address for your company address</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 mt-5" id="pricing_box2">
+                    <div class="pricing_box_header">
+                        <h5>Hot desk (unlimited)</h5>
+                        <h1>$350</h1>
+                    </div>
+                    <div class="pricing_box_item" style="height: 137px;">
+                        <p>Per Month (plus GST)</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-# col-lg-3 mt-5" id="pricing_box4">
+                    <div class="pricing_box_header">
+                        <h5>Hot desk (low user)</h5>
+                        <h1>$175</h1>
+                    </div>
+                    <div class="pricing_box_item">
+                        <p>Per Month (plus GST)</p>
+                    </div>
+                    <div class="pricing_box_item">
+                        <p>1 day a week</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 mt-5" id="pricing_box3">
+                    <div class="pricing_box_header">
+                        <h5>Day desk</h5>
+                        <h1>$50</h1>
+                    </div>
+                    <div class="pricing_box_item" style="height: 137px;">
+                        <p>Per Month (plus GST)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mt-5" id="pricing_box5">
+                    <div class="pricing_box_header">
+                        <h5>Team Desks</h5>
+                        <!-- <h1>$50</h1> -->
+                    </div>
+                    <div class="pricing_box_item">
+                        <p>Contact us to discuss</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--###############################-->
+    <!--CONTACT #######################-->
+    <!--###############################-->
+
+    <!-- <iframe src="https://calendly.com/jdhnz/lyall-bay-workhub-visit?embed_domain=lyallbayworkhub.nz&amp;embed_type=Inline&amp;hide_landing_page_details=1&amp;hide_gdpr_banner=1" width="100%" height="100%" frameborder="0" title="Select a Date &amp; Time - Calendly"></iframe>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="contact_form">
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="contact" class="visible">
+        <div class="container">
+            <h2 class="text-center" style="text-align: center;">Contact Us</h2>
+            <p class="text-center" style="text-align: center;">
+                <br>
                 office@lyallbayworkhub.nz
-                <br /><br />
+                <br>
                 66B Kingsford Smith Street, Lyall Bay, Wellington
             </p>
 
-            <br /><br /><br />
-
-            <center><h3>Book a Visit</h3></center>
+            <center>
+                <h3 style="font-family: 'Lane', sans-serif;font-weight: normal;margin-top: 1.5rem;font-size: 1.4rem;">
+                    Book a Visit</h3>
+            </center>
             <!-- Calendly inline widget begin -->
             <div class="calendly-inline-widget"
-                data-url="https://calendly.com/jdhnz/lyall-bay-workhub-visit?hide_landing_page_details=1&hide_gdpr_banner=1"
-                style="min-width:320px;height:700px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
-
-        </section>
-
-        <section id="surfcam">
-            <h2>Lyall Bay Surfcam</h2>
-            
-            <!-- WIDGET VERSION 3.0 February 2025 | NZ - Lyall Bay Middle -->
-
-            <div class="sl-cam-embed" style="position:relative; padding-bottom:calc(56.25% + 40px);">
-
-                <iframe
-            
-                style="position:absolute; top:0; left:0; width:100%; height:100%;"
-            
-                src="https://embed.cdn-surfline.com/cams/67b535aa9f21c3ef19d0e343/49c73dacc4870aebcf8dda2dcc92b793c12511a0"
-            
-                frameborder="0" allowfullscreen>
-            
-                </iframe>
-            
+                data-url="https://calendly.com/jdhnz/lyall-bay-workhub-visit?hide_landing_page_details=1&amp;hide_gdpr_banner=1"
+                style="position: relative;min-width:320px;height:700px;" data-processed="true">
+                <div class="calendly-spinner">
+                    <div class="calendly-bounce1"></div>
+                    <div class="calendly-bounce2"></div>
+                    <div class="calendly-bounce3"></div>
+                </div><iframe
+                    src="https://calendly.com/jdhnz/lyall-bay-workhub-visit?embed_domain=lyallbayworkhub.nz&amp;embed_type=Inline&amp;hide_landing_page_details=1&amp;hide_gdpr_banner=1"
+                    width="100%" height="100%" frameborder="0" title="Select a Date &amp; Time - Calendly"></iframe>
             </div>
-            
-            <!-- WIDGET CONTENTS COPYRIGHT SURFLINE.COM 2025 -->
-            
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                async=""></script>
+            <!-- Calendly inline widget end -->
+        </div>
 
-        </section>        
+    </section>
 
-    </main>
-    <footer>
 
-        <p>&copy; <a href="https://lyallbayworkhub.nz" style="color:white;">2024 Lyall Bay WorkHub</a></p>
-    </footer>
-    <script src="scripts.js"></script>
+
+
+
+    <section id="" class="visible" style="padding: 60px 10px 40px 10px;">
+        <div class="container">
+            <h2 class="text-center" style="text-align: center;">Lyall Bay Surf Cam</h2>
+        </div>
+    </section>
+
+    <section id="surfcam">
+        <iframe id="surfcam-iframe" style="margin-left: 15px;width: 98vw; border: none;"
+            src="https://embed.cdn-surfline.com/cams/67b535aa9f21c3ef19d0e343/49c73dacc4870aebcf8dda2dcc92b793c12511a0"
+            frameborder="0" allowfullscreen></iframe>
+    </section>
+
+
+    <!--###############################-->
+    <!--FOOTER ########################-->
+    <!--###############################-->
+
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <p>© 2024 Lyall Bay WorkHub</p>
+                </div>
+                <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="social_icons">
+                        <ul>
+                            <li>
+                                <div data-icon="&#xe421;" class="social_icon twitter_icon" onclick="location.href='#'">
+                                </div>
+                            </li>
+                            <li>
+                                <div data-icon="&#xe420;" class="social_icon facebook_icon" onclick="location.href='#'">
+                                </div>
+                            </li>
+                            <li>
+                                <div data-icon="&#xe417;" class="social_icon linkdin_icon" onclick="location.href='#'">
+                                </div>
+                            </li>
+                            <li>
+                                <div data-icon="&#xe36c;" class="social_icon instagram_icon"
+                                    onclick="location.href='#'"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- JavaScript plugins comes here -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/retina.js"></script> -->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.js"></script>
+    <script src="js/jquery.devrama.slider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.stellar.js"></script>
+    <script src="js/jquery.cbpQTRotator.js"></script>
+
+
+    <script>
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     var grid = document.querySelector('.portfolio_container');
+        //     var msnry = new Masonry(grid, {
+        //         itemSelector: '.portfolio_item',
+        //         columnWidth: '.portfolio_item',
+        //         percentPosition: true
+        //     });
+        // });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var grid = document.querySelector('.portfolio_container');
+
+            imagesLoaded(grid, function () {
+                new Masonry(grid, {
+                    itemSelector: '.portfolio_item',
+                    columnWidth: '.portfolio_item',
+                    percentPosition: true,
+                    fitWidth: true // Ensures proper alignment
+                });
+            });
+        });
+
+
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     var grid = document.querySelector('.portfolio_container');
+
+        //     imagesLoaded(grid, function() {
+        //         var masonry = new Masonry(grid, {
+        //             itemSelector: '.portfolio_item',
+        //             columnWidth: '.portfolio_item',
+        //             percentPosition: true,
+        //             fitWidth: true
+        //         });
+
+        //         // Re-layout Masonry after all images are loaded
+        //         imagesLoaded(grid).on('progress', function() {
+        //             masonry.layout();
+        //         });
+        //     });
+        // });
+
+    </script>
+
+
+    <script>
+        $('#my-slide').DrSlider({
+            transition: 'slide-top',
+            width: '100%',
+            height: '30.875rem',
+            duration: 400000,
+            showControl: false,
+            showProgress: false,
+            pauseOnHover: false,
+            showControl: false,
+            userCSS: true,
+            navigationType: 'circle',
+            classNavigation: 'slider_nav',
+        });
+    </script>
+
+    <script>
+        var showRight = document.getElementById('showRight'),
+            hideRight = document.getElementById('hideRight'),
+            menuRight = document.getElementById('cbp-spmenu-s2'),
+            body = document.body;
+
+        showRight.onclick = function () {
+            "use strict";
+            classie.toggle(this, 'active');
+            classie.toggle(menuRight, 'cbp-spmenu-open');
+            disableOther('showRight');
+        };
+
+        hideRight.onclick = function () {
+            "use strict";
+            classie.toggle(this, 'active');
+            classie.toggle(menuRight, 'cbp-spmenu-open');
+            disableOther('showRight');
+        };
+    </script>
+
+
+
 </body>
+<script>
+    // Get the modal
+    var modal = document.getElementById("imageModal");
 
+    // Get the image and insert it inside the modal
+    var modalImg = document.getElementById("img01");
+    var images = document.querySelectorAll(".portfolio_item img");
+
+    // Function to open the modal with a smooth transition
+    function openModal(src) {
+        modal.classList.add("open"); // Add the 'open' class to trigger the transition
+        modalImg.src = src; // Set the image source
+    }
+
+    // Function to close the modal with a smooth transition
+    function closeModal() {
+        modal.classList.remove("open"); // Remove the 'open' class to trigger the transition
+        setTimeout(() => {
+            modal.style.display = "none"; // Hide the modal after the transition
+        }, 300); // Match the duration of the CSS transition (0.3s)
+    }
+
+    // Add click event listeners to all images
+    images.forEach(function (img) {
+        img.onclick = function () {
+            modal.style.display = "block"; // Show the modal
+            setTimeout(() => {
+                openModal(this.src); // Trigger the transition after the modal is displayed
+            }, 10); // Small delay to ensure the modal is rendered before the transition starts
+        };
+    });
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        closeModal();
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            closeModal();
+        }
+    };
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the home_arrow element
+    const homeArrow = document.getElementById('home_arrow');
+
+    // Add a click event listener to the home_arrow
+    if (homeArrow) {
+        homeArrow.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default behavior (if any)
+
+            // Get the about section
+            const aboutSection = document.getElementById('about');
+
+            if (aboutSection) {
+                // Scroll smoothly to the about section
+                aboutSection.scrollIntoView({
+                    behavior: 'smooth', // Smooth scrolling
+                    block: 'start',      // Align to the top of the section
+                });
+            } else {
+                console.error('About section not found!');
+            }
+        });
+    } else {
+        console.error('Home arrow element not found!');
+    }
+});
+</script>
+
+<script>
+    // Initialize Masonry
+    var grid = document.querySelector('#masonry-grid');
+    var masonry = new Masonry(grid, {
+        itemSelector: '.col-sm-3',
+        columnWidth: '.col-sm-3',
+        percentPosition: true
+    });
+</script>
 </html>
