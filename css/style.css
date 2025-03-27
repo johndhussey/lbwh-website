@@ -101,7 +101,7 @@ a {
     font-size: 1em;
     line-height: 1.625rem;
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
+    /* font-weight: 600; */
     text-decoration: none;
 }
 
