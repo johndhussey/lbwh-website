@@ -187,11 +187,11 @@ a {
 
 .cbp-spmenu h3 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1.3rem;
     padding-left: 2rem;
     margin: 0;
-    font-weight: 700;
+    font-weight: 0;
     float: left;
 }
 
@@ -444,9 +444,9 @@ a {
 #navigation li a {
     /* color: #c4c4c4; */
     color: black;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-family: 'Source Sans Pro', sans-serif;
-    /* font-weight: 700; */
+    font-weight: 0;
     text-transform: uppercase;
     text-decoration: none;
 }
