@@ -49,20 +49,23 @@
         */
         ScrollToContact: function () {
             $('#home_arrow').click(function () { $.scrollTo('#about', 1000, { easing: 'easeInOutExpo', offset: -navbarheight + 1, 'axis': 'y' }); });
-            $('#logo').click(function () { 
-                $.scrollTo('#home', 1000, { easing: 'easeInOutExpo', offset: -navbarheight, 'axis': 'y' }); 
-                return false 
-            });
+            
 
             var lastId,
                 topMenu = $('#navigation, #mobile_menu_content');
-            menuItems = topMenu.find('a');
-            scrollItems = menuItems.map(function () {
+                menuItems = topMenu.find('a');
+                scrollItems = menuItems.map(function () {
                 var item = $($(this).attr("href"));
                 if (item.length) { return item; }
             });
 
             menuItems.click(function (e) {
+                $('#logo').on('click', 'a[href="#home"]', function (e) {                    
+                    e.preventDefault();
+                    $('html, body').stop().animate({ scrollTop: 0 }, 1000, 'easeInOutExpo');                   
+                    //window.location.href = "";
+                });
+
                 var href = $(this).attr("href");
                 var $target = href === "#" ? $('body') : $(href);
 
@@ -78,7 +81,7 @@
                     1000,
                     'easeInOutExpo',
                     function () {
-                        // ✅ update URL hash for other sections
+                        // ✅ update URL hash for other sections                        
                         if (href && href.charAt(0) === "#" && href !== "#home") {
                             try {
                                 if (history.pushState) {
@@ -91,6 +94,7 @@
                             }
                         }
                         // do nothing if it's #home → keeps URL clean
+                        
                     }
                 );
             });

@@ -16,7 +16,7 @@ Last change:	06/06/2014
 5. Preloader / #preloader
 6. Top menu / #nav_bar
 7. Home / #home
-8. About / #about
+8. Benefits / #benefits
 9. Numbers / #numbers
 10. Video / #video
 11. About / #about
@@ -586,10 +586,10 @@ a {
 }
 
 /*#####################################################################################################################*/
-/* About */
+/* Benefits */
 /*#####################################################################################################################*/
 
-#about {
+#benefits {
     padding-top: 7.2rem;
     padding-bottom: 4.125rem;
     color: black;
@@ -604,11 +604,11 @@ a {
     margin-bottom: 5rem;
 }
 
-.about_icons {
+.benefits_icons {
     margin-bottom: 4rem;
 }
 
-.about_icon {
+.benefits_icon {
     font-size: 3rem;
     /* font-size: 4rem; */
 }
