@@ -4601,7 +4601,7 @@
 .icon-mute:before {
   content: "\e51f";
 }
-.icon-newspaper:before {
+.icon-blogpaper:before {
   content: "\e520";
 }
 .icon-paperclip:before {
@@ -4811,7 +4811,7 @@
 .icon-music:before {
   content: "\e565";
 }
-.icon-news:before {
+.icon-blog:before {
   content: "\e566";
 }
 .icon-note:before {

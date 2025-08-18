@@ -19,16 +19,16 @@ Last change:	06/06/2014
 8. About / #about
 9. Numbers / #numbers
 10. Video / #video
-11. Team / #team
+11. About / #about
 12. Crue / #crue
 13. Portfolio / #portfolio
 14. Portfolio - subpage / #portfolio_subpage
 15. Clients / #clients
-16. Services / #services
+16. facilities / #facilities
 17. Testimonials / .cbp-qtrotator
 18. Parallax divider / #parallax_divider
 19. Pricing / #pricing
-20. News / #news
+20. blog / #blog
 21. Contact / #contact
 22. Footer / #footer
 23. Subpage - Blog / #blog
@@ -729,10 +729,10 @@ a {
 }
 
 /*#####################################################################################################################*/
-/* Team */
+/* About */
 /*#####################################################################################################################*/
 
-#team {
+#about {
     padding-top: 6rem;
     padding-bottom: 1rem;
     color: black;
@@ -742,7 +742,7 @@ a {
     z-index: 710;
 }
 
-#team_intro {
+#about_intro {
     margin-bottom: 3.8rem
 }
 
@@ -1115,10 +1115,10 @@ a {
 
 
 /*#####################################################################################################################*/
-/* Services */
+/* facilities */
 /*#####################################################################################################################*/
 
-#services {
+#facilities {
     padding-top: 7.4rem;
     padding-bottom: 0;
     color: black;
@@ -1128,17 +1128,17 @@ a {
     z-index: 700;
 }
 
-#services_intro {
+#facilities_intro {
     margin-bottom: 4rem;
 }
 
-.services_details {
+.facilities_details {
     text-align: left;
     /* margin-top: 1rem; */
     padding-right: 1rem;
 }
 
-.services_icon {
+.facilities_icon {
     color: #d9dce3;
     font-size: 2rem;
     float: left;
@@ -1165,8 +1165,8 @@ a {
     display: block;
 }
 
-#services_column_left,
-#services_column_right {
+#facilities_column_left,
+#facilities_column_right {
     margin-top: 0.2rem;
 }
 
@@ -1311,10 +1311,10 @@ a {
 }
 
 /*#####################################################################################################################*/
-/* News */
+/* blog */
 /*#####################################################################################################################*/
 
-#news {
+#blog {
     padding-top: 7.4rem;
     padding-bottom: 6.7rem;
     color: black;
@@ -1325,11 +1325,11 @@ a {
     z-index: 700;
 }
 
-#news_intro {
+#blog_intro {
     margin-bottom: 5.5rem;
 }
 
-.news_item {
+.blog_item {
     text-align: left;
     border-bottom: solid 1px #e5e5e5;
     padding-top: 1rem;
@@ -1340,16 +1340,16 @@ a {
     transition: all 0.3s ease-in-out;
 }
 
-.news_item:hover {
+.blog_item:hover {
     background-color: #f7f8fa;
     cursor: pointer;
 }
 
-.news_title {
+.blog_title {
     float: left;
 }
 
-.news_icon {
+.blog_icon {
     float: right;
     font-size: 2rem;
 }

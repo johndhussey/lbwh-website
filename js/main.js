@@ -33,7 +33,7 @@
             var h = window.innerHeight;
             $(window).on('scroll', function () {
                 var st = $(this).scrollTop();
-                $('#home').css('opacity', (1 - st / h));
+                $('#home').css('opacity', (1 - st / h));                
             });
         },
 
@@ -49,7 +49,10 @@
         */
         ScrollToContact: function () {
             $('#home_arrow').click(function () { $.scrollTo('#about', 1000, { easing: 'easeInOutExpo', offset: -navbarheight + 1, 'axis': 'y' }); });
-            $('#logo').click(function () { $.scrollTo('#home', 1000, { easing: 'easeInOutExpo', offset: -navbarheight, 'axis': 'y' }); return false });
+            $('#logo').click(function () { 
+                $.scrollTo('#home', 1000, { easing: 'easeInOutExpo', offset: -navbarheight, 'axis': 'y' }); 
+                return false 
+            });
 
             var lastId,
                 topMenu = $('#navigation, #mobile_menu_content');
@@ -60,10 +63,36 @@
             });
 
             menuItems.click(function (e) {
-                var href = $(this).attr("href"),
-                    offsetTop = href === "#" ? 0 : $(href).offset().top - navbarheight + 2;
-                $('html, body').stop().animate({ scrollTop: offsetTop }, 1000, 'easeInOutExpo');
+                var href = $(this).attr("href");
+                var $target = href === "#" ? $('body') : $(href);
+
+                if (!$target.length) return; // safety
                 e.preventDefault();
+
+                // Special case: scroll to top if it's #home
+                var targetTop = (href === "#home") ? 0 : ($target.offset().top - navbarheight + 2);
+                if (targetTop < 0) targetTop = 0;
+
+                $('html, body').stop().animate(
+                    { scrollTop: targetTop },
+                    1000,
+                    'easeInOutExpo',
+                    function () {
+                        // ✅ update URL hash for other sections
+                        if (href && href.charAt(0) === "#" && href !== "#home") {
+                            try {
+                                if (history.pushState) {
+                                    history.pushState(null, null, href);
+                                } else {
+                                    window.location.hash = href;
+                                }
+                            } catch (_) {
+                                window.location.hash = href;
+                            }
+                        }
+                        // do nothing if it's #home → keeps URL clean
+                    }
+                );
             });
 
             $(window).scroll(function () {
@@ -85,7 +114,7 @@
                     menuItems
                         .parent().removeClass("active")
                         .end().filter("[href=#" + id + "]").parent().addClass("active");
-                }
+                }                
             });
         },
 
@@ -156,9 +185,9 @@
                     setTimeout(function () { $('#counter_box3').addClass('animated fadeInUp') }, 400);
                     setTimeout(function () { $('#counter_box4').addClass('animated fadeInUp') }, 600);
                 }, { offset: '90%' });
-                $('#team').waypoint(function () {
-                    setTimeout(function () { $('#team_intro').addClass('animated fadeInUp') }, 0);
-                    setTimeout(function () { $('#team_slider').addClass('animated fadeInUp') }, 200);
+                $('#about').waypoint(function () {
+                    setTimeout(function () { $('#about_intro').addClass('animated fadeInUp') }, 0);
+                    setTimeout(function () { $('#about_slider').addClass('animated fadeInUp') }, 200);
                 }, { offset: '90%' });
                 $('#gallery_heading').waypoint(function () {
                     setTimeout(function () { $('#gallery_intro').addClass('animated fadeInUp') }, 0);
@@ -188,14 +217,14 @@
                     setTimeout(function () { $('#portfolio_item_details').addClass('animated fadeInUp') }, 1000);
                     setTimeout(function () { $('#portfolio_item_icons_bottom').addClass('animated fadeInUp') }, 1200);
                 }, { offset: 0 });
-                $('#services').waypoint(function () {
-                    setTimeout(function () { $('#services_intro').addClass('animated fadeInUp') }, 0);
+                $('#facilities').waypoint(function () {
+                    setTimeout(function () { $('#facilities_intro').addClass('animated fadeInUp') }, 0);
                 }, { offset: '90%' });
                 $('#service1').waypoint(function () {
-                    setTimeout(function () { $('#services_column_right').addClass('animated fadeInRight') }, 0);
+                    setTimeout(function () { $('#facilities_column_right').addClass('animated fadeInRight') }, 0);
                 }, { offset: '90%' });
                 $('#service1').waypoint(function () {
-                    setTimeout(function () { $('#services_column_left').addClass('animated fadeInLeft') }, 0);
+                    setTimeout(function () { $('#facilities_column_left').addClass('animated fadeInLeft') }, 0);
                 }, { offset: '90%' });
                 $('#testimonials').waypoint(function () {
                     setTimeout(function () { $('#testimonials').addClass('animated fadeInUp') }, 0);
@@ -206,11 +235,11 @@
                     setTimeout(function () { $('#pricing_box2').addClass('animated fadeInLeft') }, 400);
                     setTimeout(function () { $('#pricing_box3').addClass('animated fadeInLeft') }, 600);
                 }, { offset: '70%' });
-                $('#news').waypoint(function () {
-                    setTimeout(function () { $('#news_intro').addClass('animated fadeInUp') }, 0);
-                    setTimeout(function () { $('#news1').addClass('animated fadeInUp') }, 200);
-                    setTimeout(function () { $('#news2').addClass('animated fadeInUp') }, 400);
-                    setTimeout(function () { $('#news3').addClass('animated fadeInUp') }, 600);
+                $('#blog').waypoint(function () {
+                    setTimeout(function () { $('#blog_intro').addClass('animated fadeInUp') }, 0);
+                    setTimeout(function () { $('#blog1').addClass('animated fadeInUp') }, 200);
+                    setTimeout(function () { $('#blog2').addClass('animated fadeInUp') }, 400);
+                    setTimeout(function () { $('#blog3').addClass('animated fadeInUp') }, 600);
                     setTimeout(function () { $('#more_posts').addClass('animated fadeInUp') }, 800);
                 }, { offset: '70%' });
                 $('#contact').waypoint(function () {

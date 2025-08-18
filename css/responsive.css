@@ -2,7 +2,7 @@
     html {
         font-size: 118.75%;
     }
-    /*Team Slider ########*/
+    /*about Slider ########*/
     
     #person1, #person2, #person3 {
         width:50%;
@@ -33,8 +33,8 @@
 	#counter_box2,
 	#counter_box3,
 	#counter_box4, 
-	#team_intro,
-	#team_slider,
+	#about_intro,
+	#about_slider,
 	#crew_intro,
 	#crew_member1,
 	#crew_member2,
@@ -54,22 +54,22 @@
 	#portfolio_item_title,
 	#portfolio_item_details,
 	#portfolio_item_icons_bottom, 
-	#services_intro,
-	#services_column_left,
-	#services_column_right,
-	#services1a_image,
-	#services1b_image,
-	#services2a_image,
-	#services2b_image,
+	#facilities_intro,
+	#facilities_column_left,
+	#facilities_column_right,
+	#facilities1a_image,
+	#facilities1b_image,
+	#facilities2a_image,
+	#facilities2b_image,
 	#testimonials,
 	#pricing_intro,
 	#pricing_box1,
 	#pricing_box2,
 	#pricing_box3,
-	#news_intro,
-	#news1,
-	#news2,
-	#news3,
+	#blog_intro,
+	#blog1,
+	#blog2,
+	#blog3,
 	#more_posts,
 	#contact_form,
 	#contact_info
@@ -107,7 +107,7 @@
         line-height: 1.8rem;
     }
     
-    /*Team Slider ########*/
+    /*about Slider ########*/
     
     .person_info {
         padding-left: 3.5rem;
@@ -146,7 +146,7 @@
         line-height: 2.4375rem;
     }
     
-    /*Team Slider ########*/
+    /*about Slider ########*/
     
     .person_info {
         padding-left: 3.5rem;
@@ -187,36 +187,36 @@
     padding-bottom:6.5rem;
     }
     
-    .services_details {
+    .facilities_details {
         text-align:center;
         /* margin-top:1rem; */
         padding-right:0rem;
     }
-    .services_icon {
+    .facilities_icon {
         font-size:3rem;
         float:none;
         margin-right:0;
         margin-bottom:0.5rem;
     }
-    .services_details h5 {
+    .facilities_details h5 {
         font-size: 1.5rem;
         line-height: 2.4375rem;
     }
     
-    #services_column_left {
+    #facilities_column_left {
         margin-bottom:7rem;
     }
     .service_images {
         clear:both;
     }
     
-    .news_item {
+    .blog_item {
         text-align:center;
     }
-    .news_title {
+    .blog_title {
         float:none
     }
-    .news_icon {
+    .blog_icon {
         display:none;
     }
     
@@ -263,7 +263,7 @@
         margin-top: 4.5rem;
     }
     
-    /*Team Slider ########*/
+    /*about Slider ########*/
     
     .person_info {
         padding-left: 2rem;

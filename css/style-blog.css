@@ -19,16 +19,16 @@ Last change:	06/06/2014
 8. About / #about
 9. Numbers / #numbers
 10. Video / #video
-11. Team / #team
+11. about / #about
 12. Crue / #crue
 13. Portfolio / #portfolio
 14. Portfolio - subpage / #portfolio_subpage
 15. Clients / #clients
-16. Services / #services
+16. facilities / #facilities
 17. Testimonials / .cbp-qtrotator
 18. Parallax divider / #parallax_divider
 19. Pricing / #pricing
-20. News / #news
+20. blog / #blog
 21. Contact / #contact
 22. Footer / #footer
 23. Subpage - Blog / #blog
@@ -336,10 +336,10 @@ Last change:	06/06/2014
 
 
 /*#####################################################################################################################*/
-/* News */
+/* blog */
 /*#####################################################################################################################*/
 
-#news {
+#blog {
     padding-top: 7.4rem;
     padding-bottom: 6.7rem;
     color: black;
@@ -350,11 +350,11 @@ Last change:	06/06/2014
     z-index: 700;
 }
 
-#news_intro {
+#blog_intro {
     margin-bottom: 5.5rem;
 }
 
-.news_item {
+.blog_item {
     text-align: left;
     border-bottom: solid 1px #e5e5e5;
     padding-top: 1rem;
@@ -365,16 +365,16 @@ Last change:	06/06/2014
     transition: all 0.3s ease-in-out;
 }
 
-.news_item:hover {
+.blog_item:hover {
     background-color: #f7f8fa;
     cursor: pointer;
 }
 
-.news_title {
+.blog_title {
     float: left;
 }
 
-.news_icon {
+.blog_icon {
     float: right;
     font-size: 2rem;
 }
