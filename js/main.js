@@ -63,7 +63,8 @@
                 $('#logo').on('click', 'a[href="#home"]', function (e) {                    
                     e.preventDefault();
                     $('html, body').stop().animate({ scrollTop: 0 }, 1000, 'easeInOutExpo');                   
-                    //window.location.href = "";
+                    location.hash = '';
+                    history.replaceState(null, document.title, location.pathname + location.search);
                 });
 
                 var href = $(this).attr("href");
