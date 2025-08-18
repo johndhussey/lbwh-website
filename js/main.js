@@ -62,9 +62,16 @@
             menuItems.click(function (e) {
                 $('#logo').on('click', 'a[href="#home"]', function (e) {                    
                     e.preventDefault();
-                    $('html, body').stop().animate({ scrollTop: 0 }, 1000, 'easeInOutExpo');                   
-                    location.hash = '';
-                    history.replaceState(null, document.title, location.pathname + location.search);
+                    $('html, body').stop().animate(
+                        { scrollTop: 0 },
+                        1000,
+                        'easeInOutExpo',
+                        function () {
+                            // Run this after animation is finished
+                            location.hash = '';
+                            history.replaceState(null, document.title, location.pathname + location.search);
+                        }
+                    );                   
                 });
 
                 var href = $(this).attr("href");
