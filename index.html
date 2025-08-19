@@ -1255,16 +1255,16 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault(); // Prevent default behavior (if any)
 
             // Get the about section
-            const aboutSection = document.getElementById('about');
+            const benefitsSection = document.getElementById('benefits');
 
-            if (aboutSection) {
+            if (benefitsSection) {
                 // Scroll smoothly to the about section
-                aboutSection.scrollIntoView({
+                benefitsSection.scrollIntoView({
                     behavior: 'smooth', // Smooth scrolling
                     block: 'start',      // Align to the top of the section
                 });
             } else {
-                console.error('About section not found!');
+                console.error('Benefits section not found!');
             }
         });
     } else {

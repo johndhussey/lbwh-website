@@ -47,9 +47,7 @@
         /**
         * Scroll To Contact
         */
-        ScrollToContact: function () {
-            $('#home_arrow').click(function () { $.scrollTo('#about', 1000, { easing: 'easeInOutExpo', offset: -navbarheight + 1, 'axis': 'y' }); });
-            
+        ScrollToContact: function () {            
 
             var lastId,
                 topMenu = $('#navigation, #mobile_menu_content');
