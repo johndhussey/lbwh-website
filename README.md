@@ -1,18 +1,21 @@
-# Lyall Bay WorkHub Website
+# Lyall Bay WorkHub Website (Concept Demo)
 
-A high-performance, responsive website for Lyall Bay WorkHub - Wellington's premier beachside coworking space designed for productivity and work-life balance.
+A high-performance, responsive website concept for a fictional beachside coworking space in Wellington. This is a **demonstration project** showcasing modern web development techniques and performance optimization.
 
-## 🚀 Live Website
+> ⚠️ **CONCEPT PROJECT**: This is a fictional business created for demonstration purposes. The coworking space does not exist in reality.
 
-**[Visit Lyall Bay WorkHub →](https://lyallbayworkhub.nz/)**
+## 🚀 Live Demo
 
-[![Performance](https://img.shields.io/badge/Performance-A+-brightgreen)](https://lyallbayworkhub.nz/)
-[![Security](https://img.shields.io/badge/Security-A+-brightgreen)](https://lyallbayworkhub.nz/)
-[![SEO](https://img.shields.io/badge/SEO-95%2F100-brightgreen)](https://lyallbayworkhub.nz/)
+**[View Concept Demo →](https://johndhussey.github.io/lbwh-website/)**
 
-## 📍 About Lyall Bay WorkHub
+[![Performance](https://img.shields.io/badge/Performance-A+-brightgreen)](https://johndhussey.github.io/lbwh-website/)
+[![Security](https://img.shields.io/badge/Security-A+-brightgreen)](https://johndhussey.github.io/lbwh-website/)
+[![SEO](https://img.shields.io/badge/SEO-95%2F100-brightgreen)](https://johndhussey.github.io/lbwh-website/)
+[![Demo](https://img.shields.io/badge/Status-Concept%20Demo-blue)](https://johndhussey.github.io/lbwh-website/)
 
-Located steps from Wellington's stunning Lyall Bay beach, our coworking space offers:
+## 📍 About This Concept
+
+This concept website presents a fictional coworking space located steps from Wellington's stunning Lyall Bay beach, featuring:
 - **Inspiring beachside location** next to Wellington Airport
 - **Hyper-fast 2000 Mbps fiber internet** for seamless productivity  
 - **24/7 access** with CCTV security
@@ -92,7 +95,7 @@ npx http-server
 
 1. **Upload files** to your web server
 2. **Ensure .htaccess is enabled** for security headers and caching
-3. **Update domain** in .htaccess if different from lyallbayworkhub.nz
+3. **Update domain** in .htaccess for your specific deployment
 4. **Test security headers** using tools like securityheaders.com
 
 ## 📈 Performance Metrics
@@ -186,20 +189,22 @@ This project is proprietary software for Lyall Bay WorkHub. All rights reserved.
 
 ## 🔗 Links
 
-- **Live Website**: https://lyallbayworkhub.nz/
+- **Live Demo**: https://johndhussey.github.io/lbwh-website/
 - **Repository**: https://github.com/johndhussey/lbwh-website
 - **Issues**: https://github.com/johndhussey/lbwh-website/issues
 - **Contact**: office@lyallbayworkhub.nz
 
-## 📞 Business Contact
+## 📞 Concept Details
 
-**Lyall Bay WorkHub**  
-📍 66B Kingsford Smith Street, Lyall Bay, Wellington  
-📧 office@lyallbayworkhub.nz  
-🌐 https://lyallbayworkhub.nz/
+**Fictional Business Concept**  
+📍 Lyall Bay, Wellington (concept location)  
+🌐 **Demo:** https://johndhussey.github.io/lbwh-website/
+💻 **Repository:** https://github.com/johndhussey/lbwh-website
+
+*This is a demonstration project showcasing web development capabilities*
 
 ---
 
 *Website optimized by [Bitvagrant AI](https://github.com/johndhussey) - Delivering performance and security at scale*
 
-**Performance Score: A+ | Security Score: A+ | Mobile Friendly: ✅**
+**Performance Score: A+ | Security Score: A+ | Mobile Friendly: ✅ | Status: Concept Demo**
