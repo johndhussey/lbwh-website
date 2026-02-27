@@ -13,21 +13,26 @@
     <link rel="mask-icon" href="images/site_assets/icons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">    
-    <meta description="Lyall Bay WorkHub offers a relaxed coworking environment by the beach in Wellington. Boost productivity with high-speed internet, comfortable workspaces, free barista coffee, and 24/7 access">
+    <meta name="description" content="Lyall Bay WorkHub offers a relaxed coworking environment by the beach in Wellington. Boost productivity with high-speed internet, comfortable workspaces, free barista coffee, and 24/7 access">
+    
+    <!-- Performance & Security Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Lyall Bay WorkHub">
+    <link rel="canonical" href="https://lyallbayworkhub.nz/">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://assets.calendly.com">
+    <link rel="preconnect" href="https://embed.cdn-surfline.com">
+    
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/bootstrap.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
 
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE1PTD34XH">
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PE1PTD34XH');
-    </script>
-
-    <!-- Google Tag Manager -->
+    <!-- Google Tag Manager (GTM handles GA4 tracking) -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -51,13 +56,14 @@
     <link href="css/responsive.css" rel="stylesheet" media="screen">
     
     <!-- Google fonts -->
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     
-    <!-- Modernizer and IE specyfic files -->
+    <!-- Critical JS - Modernizer needs to be loaded early -->
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/masonry.js"></script>
-    <script src="js/imagesLoaded.js"></script>
-    <!-- <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script> -->
+    
+    <!-- Defer non-critical JS -->
+    <script src="js/masonry.js" defer></script>
+    <script src="js/imagesLoaded.js" defer></script>
     
 
 
@@ -850,37 +856,34 @@
         <div class="container">
             <div class="portfolio_container row g-3">
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/1.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/1.jpg" alt="Lyall Bay WorkHub interior" loading="lazy"></a>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/2.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/2.jpg" alt="Coworking space view" loading="lazy"></a>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/3.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/3.jpg" alt="Beach workspace environment" loading="lazy"></a>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/4.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/4.jpg" alt="Modern office facilities" loading="lazy"></a>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/11.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/11.jpg" alt="Meeting room setup" loading="lazy"></a>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/12.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/12.jpg" alt="Collaborative workspace" loading="lazy"></a>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/7.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/7.jpg" alt="Kitchen and break area" loading="lazy"></a>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/8.jpg"></a>
-                </div>
-                <!-- <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/12.jpg"></a>
-                </div> -->
-                <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/9.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/8.jpg" alt="Desk setup options" loading="lazy"></a>
                 </div>
                 <div class="col-sm-6 col-md-4 portfolio_item">
-                    <a href="javascript:void(0);"><img src="images/site_assets/10.jpg"></a>
+                    <a href="javascript:void(0);"><img src="images/site_assets/9.jpg" alt="WorkHub atmosphere" loading="lazy"></a>
+                </div>
+                <div class="col-sm-6 col-md-4 portfolio_item">
+                    <a href="javascript:void(0);"><img src="images/site_assets/10.jpg" alt="Beach location benefits" loading="lazy"></a>
                 </div>
             </div>
         </div>
@@ -1112,23 +1115,22 @@
 
 
 
-    <!-- JavaScript plugins comes here -->
+    <!-- JavaScript plugins - optimized loading -->
     <script src="js/jquery-2.0.3.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.scrollTo.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/main.js"></script>
-    <!-- <script src="js/retina.js"></script> -->
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/nivo-lightbox.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.mb.YTPlayer.js"></script>
-    <script src="js/jquery.devrama.slider.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/jquery.stellar.js"></script>
-    <script src="js/jquery.cbpQTRotator.js"></script>
+    <script src="js/jquery.easing.min.js" defer></script>
+    <script src="js/jquery.scrollTo.js" defer></script>
+    <script src="js/jquery.form.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/waypoints.min.js" defer></script>
+    <script src="js/owl.carousel.min.js" defer></script>
+    <script src="js/nivo-lightbox.min.js" defer></script>
+    <script src="js/classie.js" defer></script>
+    <script src="js/jquery.counterup.min.js" defer></script>
+    <script src="js/jquery.mb.YTPlayer.js" defer></script>
+    <script src="js/jquery.devrama.slider.js" defer></script>
+    <script src="js/jquery.fitvids.js" defer></script>
+    <script src="js/jquery.stellar.js" defer></script>
+    <script src="js/jquery.cbpQTRotator.js" defer></script>
 
 
     <script>
