@@ -1,21 +1,21 @@
-# Lyall Bay WorkHub Website (Concept Demo)
+# Lyall Bay WorkHub Website (Early Prototype)
 
-A high-performance, responsive website concept for a fictional beachside coworking space in Wellington. This is a **demonstration project** showcasing modern web development techniques and performance optimization.
+A high-performance, responsive website prototype for Lyall Bay WorkHub - a beachside coworking space in Wellington. This was an **early website experiment** showcasing modern web development techniques and performance optimization.
 
-> ⚠️ **CONCEPT PROJECT**: This is a fictional business created for demonstration purposes. The coworking space does not exist in reality.
+> ℹ️ **PROTOTYPE VERSION**: This is an early experimental website version, not the current production site.
 
-## 🚀 Live Demo
+## 🚀 GitHub Demo
 
-**[View Concept Demo →](https://johndhussey.github.io/lbwh-website/)**
+**[View Prototype →](https://johndhussey.github.io/lbwh-website/)**
 
 [![Performance](https://img.shields.io/badge/Performance-A+-brightgreen)](https://johndhussey.github.io/lbwh-website/)
 [![Security](https://img.shields.io/badge/Security-A+-brightgreen)](https://johndhussey.github.io/lbwh-website/)
 [![SEO](https://img.shields.io/badge/SEO-95%2F100-brightgreen)](https://johndhussey.github.io/lbwh-website/)
-[![Demo](https://img.shields.io/badge/Status-Concept%20Demo-blue)](https://johndhussey.github.io/lbwh-website/)
+[![Demo](https://img.shields.io/badge/Status-Early%20Prototype-blue)](https://johndhussey.github.io/lbwh-website/)
 
-## 📍 About This Concept
+## 📍 About Lyall Bay WorkHub
 
-This concept website presents a fictional coworking space located steps from Wellington's stunning Lyall Bay beach, featuring:
+This early website prototype presents Lyall Bay WorkHub, a coworking space concept located steps from Wellington's stunning Lyall Bay beach, featuring:
 - **Inspiring beachside location** next to Wellington Airport
 - **Hyper-fast 2000 Mbps fiber internet** for seamless productivity  
 - **24/7 access** with CCTV security
@@ -189,22 +189,22 @@ This project is proprietary software for Lyall Bay WorkHub. All rights reserved.
 
 ## 🔗 Links
 
-- **Live Demo**: https://johndhussey.github.io/lbwh-website/
+- **GitHub Demo**: https://johndhussey.github.io/lbwh-website/
 - **Repository**: https://github.com/johndhussey/lbwh-website
 - **Issues**: https://github.com/johndhussey/lbwh-website/issues
 - **Contact**: office@lyallbayworkhub.nz
 
-## 📞 Concept Details
+## 📞 Project Details
 
-**Fictional Business Concept**  
-📍 Lyall Bay, Wellington (concept location)  
-🌐 **Demo:** https://johndhussey.github.io/lbwh-website/
+**Early Website Prototype**  
+📍 Lyall Bay, Wellington, New Zealand  
+🌐 **GitHub Demo:** https://johndhussey.github.io/lbwh-website/
 💻 **Repository:** https://github.com/johndhussey/lbwh-website
 
-*This is a demonstration project showcasing web development capabilities*
+*This is an early experimental website version showcasing web development capabilities*
 
 ---
 
 *Website optimized by [Bitvagrant AI](https://github.com/johndhussey) - Delivering performance and security at scale*
 
-**Performance Score: A+ | Security Score: A+ | Mobile Friendly: ✅ | Status: Concept Demo**
+**Performance Score: A+ | Security Score: A+ | Mobile Friendly: ✅ | Status: Early Prototype**
